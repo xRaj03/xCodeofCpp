@@ -31,6 +31,7 @@ void create(int A[], int n)
         t->next = last->next;
         t->prev = last;
         last->next = t;
+        last = t;
     }
 }
 
