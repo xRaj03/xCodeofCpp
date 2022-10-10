@@ -14,5 +14,6 @@ int main()
     s.insert(35);
     for (int x : s)
         cout << x << " ";
+    cout<<s.size();
     return 0;
 }
