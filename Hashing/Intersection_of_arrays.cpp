@@ -9,6 +9,8 @@ int intersection(int a[], int b[], int m, int n)
     unordered_set<int>s;
     for(int i=0; i<m; i++)
         s.insert(a[i]);
+    for (int i = 0; i < n; i++)
+        s.insert(b[i]);
     int res=0;
     for(int j=0; j<n; j++)
     {
@@ -18,7 +20,11 @@ int intersection(int a[], int b[], int m, int n)
             s.erase(b[j]);
         }
     }
-    cout<<res<<endl;
+    for(auto x: s)
+    {
+        cout<<x<<endl;
+    }
+    //cout<<res<<endl;
     return res;
 }
 
