@@ -50,11 +50,5 @@ int main(){
     int B[]={60, 70, 80, 10};
 
     find(A,B,5,4);
-
-
-
-
-    
-
     return 0;
 }
