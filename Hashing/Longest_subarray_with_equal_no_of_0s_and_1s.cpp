@@ -20,9 +20,9 @@ int longestSub(bool *a, int n)
     for(int i=0; i<n; i++)
     {
         int c0=0, c1=0;
-        for(int j=0; j<n; j++)
+        for(int j=i; j<n; j++)
         {
-            if(a[i]==0)
+            if(a[j]==0)
                 c0++;
             else
                 c1++;
@@ -30,16 +30,16 @@ int longestSub(bool *a, int n)
                 res=max(res, j-i+1);// This argument does not fully satisfies the given logic of the question
         }   
     }
-    cout<<res;
-    return res;
+/*     cout<<res;
+ */    return res;
 }
 
 // Try to find the optimised solution to solve this problem
 
 int main(){
 
-    bool A[]={1,0,1,1,1,0,0,0};
-    cout<<longestSub(A, 8);
+    bool A[] = {0, 0, 1, 1, 0};
+    cout<<longestSub(A, 5);
 
     return 0;
 }
