@@ -8,7 +8,7 @@ void solve(){
     for(int i=1; i<=n; ++i) cin >> a[i];
     map<int, int> Q;
     for(int i=1; i<n; ++i) Q[a[i]]++;
-    for(auto i:Q) sum+=1.second*(i.second)/2;
+    for(auto i:Q) sum+=1.second * (i.second)/2;
     cout<<sum<<endl;
 }
 
