@@ -13,7 +13,7 @@ Output: 0 to 3 Or 1 to 4
 #include<bits/stdc++.h>
 
 using namespace std;
-
+// Naive approch to find logest subarray with equal no of 0s and 1s 
 int longestSub(bool *a, int n)
 {
     int res=0;
@@ -33,6 +33,8 @@ int longestSub(bool *a, int n)
     cout<<res;
     return res;
 }
+
+// Try to find the optimised solution to solve this problem
 
 int main(){
 
