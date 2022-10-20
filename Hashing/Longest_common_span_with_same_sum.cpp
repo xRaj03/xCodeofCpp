@@ -25,6 +25,10 @@ int Mcomon(bool a[], bool b[], int n)
     return res;
 }
 
+// Optimised approch 
+
+
+
 int main(){
 
     bool A[]={0,1,0,0,0,0};
