@@ -22,7 +22,7 @@ int maxlen (int a[], int n, int sum)
     return res;
 }
 
-// Optimised solution to find longest subarray with fiven sum
+// Optimised solution to find longest subarray with given sum
 int Maxlen(int a[], int n, int sum)
 {
     unordered_set<int,int>m;
@@ -41,7 +41,7 @@ int Maxlen(int a[], int n, int sum)
         }
         if(m.find(pre_sum-sum)!= m.end())
         {
-            res= max(res, i-m[pre_sum-sum]);
+            res= max(res, i-m.[pre_sum-sum]);
         }
     }
     return res;
