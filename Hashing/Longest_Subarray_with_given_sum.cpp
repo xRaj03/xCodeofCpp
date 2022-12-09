@@ -41,7 +41,7 @@ int Maxlen(int a[], int n, int sum)
         }
         if(m.find(pre_sum-sum)!= m.end())
         {
-            res= max(res, i-m.[pre_sum-sum]);
+            res= max(res, i-m[pre_sum-sum]);
         }
     }
     return res;
