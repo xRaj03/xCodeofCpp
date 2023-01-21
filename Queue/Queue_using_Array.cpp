@@ -19,6 +19,13 @@ struct Queue
 
     
 */
+void create(struct Queue *q, int size)
+{
+    q->size=size;
+    q->front = q->rear =-1;
+    q->Q = (int*)malloc(q->size*sizeof(int));
+}
+
 void enqueue(Queue*q, int x)
 {
     // Condition to check if the queue is full or not
@@ -32,7 +39,7 @@ void enqueue(Queue*q, int x)
 
 }
 
-int dequeue(Queue*q)
+int dequeue(struct Queue *q)
 {
     // Intializing the variable x as -1 so that it does not point anywhere
     int x=-1;
@@ -53,15 +60,26 @@ int dequeue(Queue*q)
 
 }
 
+void display(struct Queue q)
+{
+    for(int i= q.front+1; i<=q.rear; i++)
+        cout<<q.Q[i]<<endl;
+}
+
 
 int main(){
 
     struct Queue q;
-    cout<<"Enter the size of the queue"<<endl;
-    cin>>q.size;
+    create(&q, 5);
 
-    q.Q=(int*)malloc(q.size*sizeof(int));
-    q.rear=q.front=-1;
+    enqueue(&q, 10);
+    enqueue(&q, 20);
+    enqueue(&q, 30);
+    enqueue(&q, 40);
+    enqueue(&q, 50);
+
+    display(q);
+
 
 
     return 0;
