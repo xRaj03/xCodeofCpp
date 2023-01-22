@@ -41,7 +41,7 @@ void enqueue(Queue*q, int x)
 
 int dequeue(struct Queue *q)
 {
-    // Intializing the variable x as -1 so that it does not point anywhere
+    // Intializing the variable x as -1 so that later it can store the deleted value
     int x=-1;
 
     //Condition to check that , if the queue is already empty or not , 
