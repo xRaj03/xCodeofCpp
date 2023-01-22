@@ -9,7 +9,6 @@ struct Node{
 
 struct Queue
 {
-    public:
     Node*front, *rear;
     front=rear=NULL;
 };

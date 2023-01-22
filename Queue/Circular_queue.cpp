@@ -59,6 +59,7 @@ int dequeue(struct Queue *q)
 }
 
 void display(struct Queue q)
+
 {
     int i=q.front+1;
     do{
