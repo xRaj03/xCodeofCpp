@@ -1,3 +1,6 @@
+/* In this code i want to make a pointer and point it the 
+object which i want to create in heap */
+
 #include<bits/stdc++.h>
 
 using namespace std;
