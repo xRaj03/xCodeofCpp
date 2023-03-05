@@ -1,12 +1,14 @@
-#include<iostream>
-#include<iomainip>
+/* #include<bits/stdc++.h>
 
 using namespace std;
 
 int main(){
 
-    cout<<setw(6)
-    <<1239;
-
+    int a, b;
+    cout<<"Enter the first integer"<<endl;
+    cin>>a;
+    cout<<"Enter the second integer"<<endl;
+    cin>>b;
+    cout<<"Multipication of a and b is "<<(a*b)<<endl;
     return 0;
-}
+} */
